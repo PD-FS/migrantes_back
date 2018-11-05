@@ -1,0 +1,47 @@
+<%= form_with(model: need, local: true) do |form| %>
+  <% if need.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(need.errors.count, "error") %> prohibited this need from being saved:</h2>
+
+      <ul>
+      <% need.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :Description %>
+    <%= form.text_field :Description, id: :need_Description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :request_element %>
+    <%= form.number_field :request_element, id: :need_request_element %>
+  </div>
+
+  <div class="field">
+    <%= form.label :given_element %>
+    <%= form.number_field :given_element, id: :need_given_element %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_complete %>
+    <%= form.check_box :is_complete, id: :need_is_complete %>
+  </div>
+
+  <div class="field">
+    <%= form.label :donation_category_id_id %>
+    <%= form.text_field :donation_category_id_id, id: :need_donation_category_id_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :enterprise_id_id %>
+    <%= form.text_field :enterprise_id_id, id: :need_enterprise_id_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

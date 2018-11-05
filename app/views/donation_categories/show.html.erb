@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @donation_category.name %>
+</p>
+
+<p>
+  <strong>Icon:</strong>
+  <%= @donation_category.icon %>
+</p>
+
+<p>
+  <strong>Donation kind:</strong>
+  <%= @donation_category.donation_kind_id %>
+</p>
+
+<%= link_to 'Edit', edit_donation_category_path(@donation_category) %> |
+<%= link_to 'Back', donation_categories_path %>

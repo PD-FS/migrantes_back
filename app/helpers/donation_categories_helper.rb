@@ -1,0 +1,2 @@
+module DonationCategoriesHelper
+end

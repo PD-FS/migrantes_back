@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @need.Description %>
+</p>
+
+<p>
+  <strong>Request element:</strong>
+  <%= @need.request_element %>
+</p>
+
+<p>
+  <strong>Given element:</strong>
+  <%= @need.given_element %>
+</p>
+
+<p>
+  <strong>Is complete:</strong>
+  <%= @need.is_complete %>
+</p>
+
+<p>
+  <strong>Donation category:</strong>
+  <%= @need.donation_category_id %>
+</p>
+
+<p>
+  <strong>Enterprise:</strong>
+  <%= @need.enterprise_id %>
+</p>
+
+<%= link_to 'Edit', edit_need_path(@need) %> |
+<%= link_to 'Back', needs_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  need_id: 
+  user_id: 
+  donate: 1
+  date_donation: 2018-11-05
+
+two:
+  need_id: 
+  user_id: 
+  donate: 1
+  date_donation: 2018-11-05
